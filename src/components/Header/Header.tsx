@@ -5,7 +5,9 @@ import NumberDisplay from "../NumberDisplay/NumberDisplay";
 const Header: React.FC = () => {
     return (
         <div className="Header">
-            <NumberDisplay />
+            <NumberDisplay value={0}/>
+            <div className="Face"><span role="img" aria-label="face">😂</span></div>
+            <NumberDisplay value={23}/>
         </div>
     );
 };

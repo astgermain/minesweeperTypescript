@@ -1,10 +1,14 @@
 import React from 'react';
 import "./NumberDisplay.scss";
 
-const NumberDisplay: React.FC = () => {
+interface NumberDisplayProps {
+    value: number;
+}
+
+const NumberDisplay: React.FC<NumberDisplayProps> = ({ value }) => {
     return (
         <div className="NumberDisplay">
-            This is a NumberDisplay
+            {value.toString().padStart(3, "0")}
         </div>
     );
 };
